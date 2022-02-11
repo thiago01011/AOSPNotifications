@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_setting_high">50dp</dimen>
+    <dimen name="card_setting_content_margin">16dp</dimen>
+    <dimen name="card_high_setting_high">65dp</dimen>
+    <dimen name="margin_top_item_view">8dp</dimen>
+    <dimen name="textsize_item_view">16sp</dimen>
+    <dimen name="checkbox_translation_default">18dp</dimen>
+</resources>
