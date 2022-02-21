@@ -9,25 +9,13 @@ import androidx.appcompat.widget.SearchView
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.card.MaterialCardView
 
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var generalNotificationCard: MaterialCardView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-//        var generalNotificationCard = findViewById<MaterialCardView>(R.id.notification_basic)
-//        generalNotificationCard.setOnClickListener {
-//            ContextCompat.startActivity(
-//                this,
-//                Intent(this, NotificationSettings::class.java),
-//                null
-//            )
-//        }
 
         val searchView = findViewById<SearchView>(R.id.searchView)
         searchView.setIconifiedByDefault(false)

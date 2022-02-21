@@ -22,8 +22,6 @@ class NotificationAdapter(
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_notification_list, parent, false)
         return NotificationViewHolder(view, context)
-
-//        return CourseViewHolder(ItemBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: NotificationViewHolder, position: Int) {
@@ -42,15 +40,7 @@ class NotificationAdapter(
         holder.textViewDescription.text = notificationData.description
         holder.textViewTitle.text = notificationData.type
         holder.icon.setImageResource(notificationData.icon)
-        //bind(notificationData, onItemClickListener)
-    //      val course = list[position]
-//      holder.bind(course, onItemClickListener)
-//        holder.binding.apply {
-//            textviewCourseName.text = list[position].name
-//            textviewCourseBrand.text = list[position].numberOfClasses.toString()
-//            imageviewCoursePic.setImageResource(list[position].imageCourse)
-//        }
-//        holder.itemView.setOnClickListener { onItemClickListener.onClick(list[position]) }
+
     }
 
     override fun getItemCount(): Int = list.size
@@ -71,21 +61,4 @@ class NotificationViewHolder(view: View, context: Context): RecyclerView.ViewHol
         icon = view.findViewById(R.id.ic_notification)
         switch = view.findViewById(R.id.switch1)
     }
-
-
-//    fun bind(course: Course, onItemClickListener: ItemClickListener) {
-//        view.apply {
-//            setOnClickListener { onItemClickListener.onClick(course) }
-//            findViewById<ImageView>(R.id.imageview_course_pic).setImageResource(course.imageCourse)
-//            findViewById<TextView>(R.id.textview_course_name).text = course.name
-//            findViewById<TextView>(R.id.textview_course_brand).text = course.numberOfClasses.toString()
-//        }
-//    }
 }
-//
-//fun interface ItemClickListener {
-//    fun onClick(course: Course)
-//}
-
-//private val onItemClickListener: ItemClickListener
-

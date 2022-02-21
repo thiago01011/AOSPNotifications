@@ -61,39 +61,6 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-<!--    <com.google.android.material.card.MaterialCardView-->
-<!--        android:id="@+id/notification_basic"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        app:cardElevation="2dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/card">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="vertical"-->
-<!--            android:padding="16dp">-->
-
-<!--            &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/notification_general_title"-->
-<!--                android:textAppearance="?attr/textAppearanceHeadline6" />-->
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:text="@string/notification_general_text"-->
-<!--                android:textAppearance="?attr/textAppearanceBody2"-->
-<!--                android:textColor="?android:attr/textColorSecondary" />-->
-<!--        </LinearLayout>-->
-<!--    </com.google.android.material.card.MaterialCardView>-->
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_notification"
         android:layout_width="match_parent"
@@ -104,16 +71,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card" />
-
-    <!--    <include-->
-    <!--        android:id="@+id/fragment_main_layout"-->
-    <!--        layout="@layout/fragment_main"-->
-    <!--        app:layout_constraintBottom_toTopOf="@+id/button2"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@id/searchView"-->
-    <!--        android:layout_height="0dp"-->
-    <!--        android:layout_width="match_parent"/>-->
 
     <Button
         android:id="@+id/button"
