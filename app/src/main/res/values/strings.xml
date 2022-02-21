@@ -1,15 +1,16 @@
 <resources>
     <string name="app_name">AOSP Notifications</string>
+
     <!-- Settings Activity Title -->
     <string name="title_activity_settings">Settings</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
+    <string name="notification_persistent_header">Persistent Notification</string>
     <string name="sync_header">Sync</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
+    <!-- Notification Preferences -->
+    <string name="ongoing_title">On going</string>
+    <string name="importance_title">Importance</string>
 
     <!-- Sync Preferences -->
     <string name="sync_title">Sync email periodically</string>
@@ -33,4 +34,22 @@
     <string name="secondary_text">Find the notification type you want, enable it and tap on it to set it up.</string>
     <string name="enable_notification">Enable</string>
     <string name="label">Importance</string>
+    <string name="notification_persistent_summary">Notification that cannot be dismissed by the user.</string>
+    <string name="noclear_title">No clear</string>
+    <string name="notification_autodismissible_header">Autodismissible Notification</string>
+    <string name="notification_autodismissible_summary">Notification that dismiss itself by user touch.</string>
+    <string name="autocancel_title">Auto cancel</string>
+    <string name="notification_customized_header">Customized Notification</string>
+    <string name="notification_customized_summary">Notification that uses remote view.</string>
+    <string name="customized_title">Remote view</string>
+    <string name="notification_fullscreen_header">Fullscreen Notification</string>
+    <string name="notification_fullscreen_summary">Notification that takes the whole screen.</string>
+    <string name="fullscreen_title">Fullscreen</string>
+    <string name="notification_other_header">Other Settings</string>
+    <string name="other_title">Incremental ID</string>
+    <string name="other_summary">Each time you fire a notification, it goes with a different ID.</string>
+    <string name="notification_timed_header">Timed Notification</string>
+    <string name="notification_timed_summary">Notification with a time to be fired.</string>
+    <string name="timed_title">Timed</string>
+    <string name="time_title">Time</string>
 </resources>

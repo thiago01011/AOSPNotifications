@@ -1,11 +1,17 @@
 package com.galindo.aospnotifications
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,5 +32,18 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         supportActionBar?.hide()
+        PreferenceManager.setDefaultValues(this, R.xml.root_preferences, false)
+
+        retrieveSharedPreferenceValues()
+    }
+
+    fun retrieveSharedPreferenceValues() {
+        val sharedPref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        val switchPref = sharedPref.getBoolean(NotificationSettings.KEY_PREF_ONGOING, false)
+        Toast.makeText(
+            this, switchPref.toString(),
+            Toast.LENGTH_SHORT
+        ).show()
+
     }
 }
