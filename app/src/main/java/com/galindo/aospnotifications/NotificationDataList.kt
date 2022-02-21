@@ -3,6 +3,10 @@ package com.galindo.aospnotifications
 class NotificationDataList {
     fun loadNotifications(): List<NotificationData> = listOf (
         NotificationData(
+            type = "General notifications",
+            description = "Notifications that can be customized as you wish.",
+            icon = R.drawable.ic_general_notification),
+        NotificationData(
             type = "Media notifications",
             description = "Notifications related to Radio and Spotify app.",
             icon = R.drawable.ic_media_notification),

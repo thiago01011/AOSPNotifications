@@ -52,4 +52,7 @@
     <string name="notification_timed_summary">Notification with a time to be fired.</string>
     <string name="timed_title">Timed</string>
     <string name="time_title">Time</string>
+    <string name="notification_basic_title">General Notification</string>
+    <string name="notification_general_title">General Notification</string>
+    <string name="notification_general_text">Can be customized as you wish, adding or removing flags and other settings.</string>
 </resources>

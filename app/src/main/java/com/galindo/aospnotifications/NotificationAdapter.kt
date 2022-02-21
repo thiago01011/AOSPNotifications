@@ -27,6 +27,12 @@ class NotificationAdapter(
 
     override fun onBindViewHolder(holder: NotificationViewHolder, position: Int) {
         val notificationData = list[position]
+        if (position == 0)
+            holder.card.setOnClickListener {
+                startActivity(context,
+                              Intent(context, NotificationSettings::class.java),
+                       null)
+            }
         holder.textViewDescription.text = notificationData.description
         holder.textViewTitle.text = notificationData.type
         holder.icon.setImageResource(notificationData.icon)
@@ -52,7 +58,7 @@ class NotificationViewHolder(view: View, context: Context): RecyclerView.ViewHol
     init {
         // Define click listener for the ViewHolder's View.
         card = view.findViewById(R.id.card_notification)
-        card.setOnClickListener { startActivity(context, Intent(context, NotificationSettings::class.java), null) }
+        //card.setOnClickListener { /*startActivity(context, Intent(context, NotificationSettings::class.java), null)*/ }
         textViewTitle = view.findViewById(R.id.notification_title)
         textViewDescription = view.findViewById(R.id.notification_description)
         icon = view.findViewById(R.id.ic_notification)
